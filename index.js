@@ -32,12 +32,12 @@ document.getElementsByTagName("h1")[0].textContent = win;
 //WITHOUT ARRAY
 /*
 //code for player 1 tile
-var randomNumber1  = Math.round(Math.random()*5);
+var randomNumber1  = Math.floor(Math.random()*6) + 1;
 var result1 = "./images/dice"+ randomNumber1+".png" ;
 document.querySelector(".img1").setAttribute("src", result1);
 
 //code for player 2 tile
-var randomNumber2  = Math.round(Math.random()*5);
+var randomNumber2  = Math.floor(Math.random()*6) + 1;
 var result2 = "./images/dice" + randomNumber2+".png" ;
 document.querySelector(".img2").setAttribute("src", result2);
 var win;
@@ -58,6 +58,7 @@ else
 console.log(randomNumber1, randomNumber2, win);
 
 document.getElementsByTagName("h1")[0].textContent = win; 
+// same thing we can do with innerhtml but the text content only focus on text of inside the tag and innerhtml focus on whole code.
 
 
 */
