@@ -9,3 +9,23 @@ document.querySelector(".img1").setAttribute("src", result1);
 var randomNumber2  = Math.round(Math.random()*5);
 var result2 = "./images/" + dice[randomNumber2];
 document.querySelector(".img2").setAttribute("src", result2);
+var win;
+
+if(randomNumber1<randomNumber2)
+{
+    win = "Winner is Player 2";
+}
+else if (randomNumber1>randomNumber2) {
+
+    win = "Winner is player 1";
+}
+else
+{
+    win = "It's TIE."
+}
+
+console.log(randomNumber1, randomNumber2, win);
+
+document.getElementsByTagName("h1")[0].textContent = win; 
+// same thing we can do with innerhtml but the text content only focus on text of inside the tag and innerhtml focus on whole code.
+
